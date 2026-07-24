@@ -90,22 +90,11 @@ body{
    HEADER
 ========================= */
 
-.header{
-
-    position:fixed;
-
-    top:0;
-    left:0;
-
-    width:100%;
-
-    backdrop-filter:blur(18px);
-
-    background:rgba(15,15,15,.65);
-
-    border-bottom:1px solid var(--border);
-
-    z-index:1000;
+.header .container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    height:82px;
 
 }
 
@@ -148,14 +137,8 @@ body{
 }
 
 .nav{
-
     display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    gap:42px;
+    gap:34px;
 
 }
 
@@ -177,9 +160,6 @@ body{
 
 }
 
-margin-left:auto;
-
-justify-self:end;
 
 }
 
