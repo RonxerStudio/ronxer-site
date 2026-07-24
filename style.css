@@ -111,13 +111,17 @@ body{
 
 .header .container{
 
-    display:flex;
+    max-width:1400px;
 
-    justify-content:space-between;
+    margin:0 auto;
+
+    display:grid;
+
+    grid-template-columns:220px 1fr 220px;
 
     align-items:center;
 
-    height:82px;
+    height:90px;
 
 }
 
@@ -129,13 +133,11 @@ body{
 
     gap:12px;
 
+    justify-self:start;
+
     text-decoration:none;
 
     color:white;
-
-    font-size:22px;
-
-    font-weight:700;
 
 }
 
@@ -149,7 +151,11 @@ body{
 
     display:flex;
 
-    gap:34px;
+    justify-content:center;
+
+    align-items:center;
+
+    gap:42px;
 
 }
 
@@ -171,21 +177,9 @@ body{
 
 }
 
-.telegram-btn{
+margin-left:auto;
 
-    padding:13px 24px;
-
-    border-radius:14px;
-
-    text-decoration:none;
-
-    color:white;
-
-    background:linear-gradient(135deg,var(--orange),var(--orange2));
-
-    transition:.35s;
-
-    box-shadow:var(--shadow);
+justify-self:end;
 
 }
 
