@@ -86,87 +86,104 @@ body{
 
 }
 
-/* =========================
+/* ===========================
    HEADER
-========================= */
+=========================== */
 
-.header .container{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    height:82px;
-
+.header{
+    position:fixed;
+    top:20px;
+    left:0;
+    width:100%;
+    z-index:1000;
 }
 
 .header .container{
-
     max-width:1400px;
-
     margin:0 auto;
+    padding:0 30px;
+    height:82px;
 
     display:grid;
-
-    grid-template-columns:220px 1fr 220px;
-
+    grid-template-columns:240px 1fr 260px;
     align-items:center;
 
-    height:90px;
+    background:rgba(15,15,15,.82);
+    backdrop-filter:blur(18px);
 
+    border:1px solid rgba(255,140,0,.18);
+
+    border-radius:24px;
+
+    box-shadow:
+        0 0 60px rgba(255,120,0,.12),
+        inset 0 0 0 1px rgba(255,255,255,.03);
 }
 
 .logo{
-
     display:flex;
-
     align-items:center;
+    gap:14px;
 
-    gap:12px;
-
-    justify-self:start;
-
+    color:#fff;
     text-decoration:none;
-
-    color:white;
-
+    font-size:30px;
+    font-weight:800;
 }
 
 .logo img{
-
     width:48px;
-
+    height:48px;
+    object-fit:contain;
 }
 
 .nav{
     display:flex;
-    gap:34px;
-
+    justify-content:center;
+    align-items:center;
+    gap:40px;
 }
 
 .nav a{
+    color:#d9d9d9;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+    position:relative;
+}
 
-    color:white;
+.nav a:hover,
+.nav a.active{
+    color:#ff8c00;
+}
+
+.telegram-btn{
+    justify-self:end;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+
+    width:220px;
+    height:52px;
+
+    border-radius:18px;
 
     text-decoration:none;
+    color:white;
+    font-weight:700;
 
-    transition:.3s;
+    background:linear-gradient(135deg,#ff8c00,#ff6a00);
 
-    font-weight:500;
+    box-shadow:0 0 30px rgba(255,120,0,.35);
 
-}
-
-.nav a:hover{
-
-    color:var(--orange);
-
-}
-
-
+    transition:.35s;
 }
 
 .telegram-btn:hover{
-
-    transform:translateY(-3px);
-
+    transform:translateY(-2px);
+    box-shadow:0 0 45px rgba(255,120,0,.55);
 }
 
 .burger{
