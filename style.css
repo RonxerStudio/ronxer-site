@@ -466,8 +466,8 @@ body::after{
 }
 
 .profile-logo img{
-    width:130px;
-    height:130px;
+    width:135px;
+    height:135px;
     object-fit:cover;
 
     border-radius:50%;
