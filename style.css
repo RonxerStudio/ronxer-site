@@ -275,13 +275,21 @@ body::after{
 }
 
 .banner-bg{
-
     position:absolute;
-
     inset:0;
 
-    overflow:hidden;
+    background:
+        linear-gradient(
+            rgba(0,0,0,.35),
+            rgba(0,0,0,.55)
+        ),
+        url("assets/banner.webp");
 
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    overflow:hidden;
 }
 
 .banner-r{
