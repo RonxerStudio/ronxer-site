@@ -466,11 +466,8 @@ body::after{
 }
 
 .profile-logo img{
-    width:145px;
-    height:145px;
-    object-fit:contain;
-    transition:.35s;
-    filter:drop-shadow(0 0 18px rgba(255,140,0,.35));
+    width:165px;
+    height:165px;
 }
 
 /* Text */
