@@ -474,22 +474,6 @@ body::after{
     margin:28px 0;
 }
 
-.card-service{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:14px 0;
-}
-
-.card-service span{
-    color:#cfcfcf;
-}
-
-.card-service strong{
-    color:#ff8c00;
-    font-size:18px;
-}
-
 .hero-stats{
     display:grid;
     grid-template-columns:repeat(3,1fr);
@@ -508,6 +492,35 @@ body::after{
     color:#888;
     font-size:13px;
 }
+
+.card-content{
+    position:relative;
+    z-index:2;
+}
+
+.card-content p{
+    color:#bdbdbd;
+    line-height:1.8;
+    margin-bottom:18px;
+}
+
+.card-content strong{
+    color:#fff;
+}
+
+.watermark{
+    position:absolute;
+    right:20px;
+    bottom:-20px;
+    font-size:260px;
+    font-weight:900;
+    color:rgba(255,255,255,.03);
+    line-height:1;
+    user-select:none;
+    pointer-events:none;
+    z-index:1;
+}
+
 /* =========================
    SECTION TITLE
 ========================= */
