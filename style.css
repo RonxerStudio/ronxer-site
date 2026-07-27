@@ -446,33 +446,31 @@ body::after{
 }
 
 .profile-logo{
-
-    width:140px;
-
-    height:140px;
-
+    width:150px;
+    height:150px;
     border-radius:50%;
-
-    background:#141414;
-
     display:flex;
-
+    justify-content:center;
     align-items:center;
 
-    justify-content:center;
+    background:rgba(15,15,15,.95);
 
-    border:3px solid rgba(255,140,0,.35);
+    border:2px solid rgba(255,140,0,.25);
 
     box-shadow:
-    0 0 45px rgba(255,140,0,.18);
+        0 0 0 6px rgba(255,140,0,.05),
+        0 0 40px rgba(255,140,0,.20);
+
+    overflow:hidden;
 
 }
 
 .profile-logo img{
-
-    width:90px;
-
+    width:100px;
+    height:100px;
     object-fit:contain;
+    filter:drop-shadow(0 0 18px rgba(255,140,0,.35));
+    transition:.35s;
 
 }
 
