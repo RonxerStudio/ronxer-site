@@ -283,7 +283,7 @@ body::after{
             rgba(0,0,0,.35),
             rgba(0,0,0,.55)
         ),
-        url("assets/banner.webp");
+        url("assets/banner.webp.png");
 
     background-size:cover;
     background-position:center;
